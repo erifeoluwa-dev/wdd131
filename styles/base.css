@@ -100,6 +100,15 @@ main h1 {
   margin-bottom: 1.5rem;
 }
 
+.card ul a {
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+}
+
 footer{
   text-align: center;
   padding: 1rem;
