@@ -3,22 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 - Erifeoluwa</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <title>WDD 131 - Dynamic Web Fundamentals - Ifeoluwa Ojelade</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Ifeoluwa Ojelade - This project allows me to demonstrate my prerequisite knowledge in web design and development">
+  <meta name="author" content="Ojelade Ifeoluwa">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
   <header>
-    <h1>WDD 131: Dynamic Web Fundamentals</h1>
+    <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+    <nav>
+      <a href="https://www.linkedin.com/">Linkedln</a> 
+      <a href="https://byupw.instructure.com/">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture Link</a>
+      <a href="#">Final Project</a>
+    </nav>
   </header>
 
   <main>
-    <p>Coursework for WDD 131 - coming soon.</p>
+    <h1>Ifeoluwa Ojelade</h1>
+    <section class="card">
+      <h2>About Me</h2>
+      <div class="media-row reverse">
+        <img src="images/profile.jpg" alt="Portrait of Ojelade Ifeoluwa">
+        <p>My name is Ojelade Ifeoluwa Olayinka. I was born in Oyo State, Nigeria, and currently live in Port Harcourt. I am a student at BYU-Pathway Worldwide, pursuing a degree in Professional Studies with a focus on developing skills across business and technology. I am passionate about bridging the gap between business and technology by using digital tools, data, and problem-solving skills to improve business processes and create practical solutions. My interests include business analysis, technology, project management, digital transformation and business leadership.</p>
+      </div>
+      <h3>Port Harcourt, Nigeria</h3>
+      <div class="media-row">
+        <img src="images/port-harcourt.jpg" alt="Aerial view of Port Harcourt">
+        <p>Port Harcourt is a major port city in southern Nigeria known for its vibrant energy, rich oil reserves, and significant economic importance as the nation's oil hub.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://www.w3schools.com/">w3schools</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/">MDN</a></li>
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.khanacademy.org/">Khan Academy</a></li>
+      </ul>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Erifeoluwa Ojelade</p>
+    <p>&copy; <span id="currentyear"></span>  Ifeoluwa Ojelade | Port Harcourt</p>
+    <p id="lastModified">Last Modified</p>
   </footer>
 
-  <script src="scripts/main.js"></script>
+  <script src="scripts/getdates.js" defer></script>
 </body>
 </html>
