@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #191927;
+  background-color: #ede7e7;
+}
+nav {
+  display: none;
+  flex-direction: column;
+}
+nav a:hover {
+  color: #adff2f;
+}
+main {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+img {
+    width: 100%;
+    height: auto;
+}
