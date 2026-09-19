@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Country | Nigeria</title>
+    <meta name="description" content="Explore the vibrant culture, economic opportunities, tourism, and latest updates from Nigeria, the giant of Africa.">
+    <meta name="author" content="Ojelade Ifeoluwa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header> 
+        <h1>Nigeria</h1> 
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+            <img srcset="images/hero-large.webp" alt="Lekki-Ikoyi Link Bridge in Lagos, Nigeria" width="680" height="450">
+            </picture> 
+            <section class="data">
+            <h2>Data</h2>
+                <dl>
+                <dt>Area</dt>
+                <dd>923,768 sq km</dd>
+                <dt>Population</dt>
+                <dd>232 million</dd>
+                <dt>Capital</dt>
+                <dd>Abuja</dd>
+                <dt>Languages</dt>
+                <dd>English (official)</dd>
+                <dt>Currency</dt>
+                <dd>Naira (₦)</dd>
+                <dt>Time Zone</dt>
+                <dd>WAT (UTC+1)</dd>
+                <dt>Calling Code</dt>
+                <dd>+234</dd>
+                </dl> 
+            </section>
+            <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="Partly cloudy weather icon" class="weather-icon">
+            <dl>
+                <dt>Temperature</dt>
+                <dd>27°C</dd>
+                <dt>Condition</dt>
+                <dd>Partly Cloudy</dd>
+                <dt>Wind</dt>
+                <dd>11km/h</dd>
+                <dt>Wind Chill</dt>
+                <dd><span id="windchill"></span></dd>
+            </dl>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>  Ifeoluwa Ojelade | Nigeria</p>
+        <p id="lastModified">Last Modified</p>
+    </footer>
+</body>
+</html>

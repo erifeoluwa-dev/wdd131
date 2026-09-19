@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #008751; 
+  --secondary-color: #ffffff;
+  --heading-font: 'Big Shoulders', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+}
+body {
+  font-family: var(--body-font);
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+}
+header, footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem;
+}
+.hero{
+    position: relative;
+}
+img{
+    width: 100%; 
+    height: auto;
+}
+.hero section {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+}
+.hero section h2{
+    color: var(--primary-color);
+    text-align: center;
+}
+dl {
+  text-align: center;
+}
+dt {
+  display: inline;
+  font-weight: bold;
+}
+dt::after {
+  content: ": ";
+}
+dd {
+  display: inline;
+  margin: 0;
+}
+dd::after {
+  content: "\A";
+  white-space: pre;
+}
+.weather-icon {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 0.5rem auto;
+}
