@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples Album | Home</title>
+    <meta name="description" content="Explore a photo album featuring beautiful temples, their architecture, history, and peaceful surroundings.">
+    <meta name="author" content="Ojelade Ifeoluwa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+    <p>Temple Album</p>
+    <button id="hamburger">☰</button>
+    <nav>
+        <a href="#" data-filter="all">Home</a>
+        <a href="#" data-filter="old">Old</a>
+        <a href="#" data-filter="new">New</a>
+        <a href="#" data-filter="large">Large</a>
+        <a href="#" data-filter="small">Small</a>
+    </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="gallery"></div>
+    </main>
+    <footer>
+    <p>&copy; <span id="currentyear"></span>  Ifeoluwa Ojelade | Port Harcourt</p>
+    <p id="lastModified">Last Modified</p>
+    </footer>
+    
+</body>
+</html>

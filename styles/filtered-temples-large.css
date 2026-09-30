@@ -1,0 +1,21 @@
+@media(min-width: 768px){
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        }
+    #hamburger{
+        display: none;
+    }
+    nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: right;
+    gap: 2rem;
+    }
+    header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 4rem;
+    }
+}
