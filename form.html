@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Review | Form</title>
+    <meta name="description" content="Check out our detailed breakdown of its key features, battery life, durability, and how it stacks up against competitors">
+    <meta name="author" content="Ojelade Ifeoluwa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
 </head>
 <body>
-    
+    <main>
+        <form method="get" action="review.html">
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product ...</option>
+            </select>
+            <div class="radio-option">
+            <input type="radio" id="star1" name="rating" value="1" required>
+            <label for="star1">1 star</label>
+            </div>
+            <div class="radio-option">
+            <input type="radio" id="star2" name="rating" value="2" required>
+            <label for="star2">2 stars</label>
+            </div>
+            <div class="radio-option">
+            <input type="radio" id="star3" name="rating" value="3" required>
+            <label for="star3">3 stars</label>
+            </div>
+            <div class="radio-option">
+            <input type="radio" id="star4" name="rating" value="4" required>
+            <label for="star4">4 stars</label>
+            </div>
+            <div class="radio-option">
+            <input type="radio" id="star5" name="rating" value="5" required>
+            <label for="star5">5 stars</label>
+            </div>
+            <label for="installDate">Date of Installation</label>
+            <input type="date" id="installDate" name="installDate" required>
+            <div class="checkbox-option">
+            <input type="checkbox" id="easyInstall" name="features" value="Easy Installation">
+            <label for="easyInstall">Easy Installation</label>
+            </div>
+            <div class="checkbox-option">
+            <input type="checkbox" id="timeTravelAccuracy" name="features" value="Time Travel Accuracy">
+            <label for="timeTravelAccuracy">Time Travel Accuracy</label>
+            </div>
+            <div class="checkbox-option">
+            <input type="checkbox" id="durableBuild" name="features" value="Durable Build">
+            <label for="durableBuild">Durable Build</label>
+            </div>
+            <div class="checkbox-option">
+            <input type="checkbox" id="goodValue" name="features" value="Good Value">
+            <label for="goodValue">Good Value</label>
+            </div>
+            <label for="review">Written Review</label>
+            <textarea id="review" name="review"></textarea>
+            <label for="username">Your Name</label>
+            <input type="text" id="username" name="username">
+            <input type="submit" value="Submit Review">
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>  Ifeoluwa Ojelade | Port Harcourt</p>
+        <p id="lastModified">Last Modified</p>
+    </footer>
 </body>
 </html>
