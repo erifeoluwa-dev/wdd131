@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM4Autos | Contact</title>
+    <meta name="description" content="Contact DM4Autos in Port Harcourt. Call, message us on WhatsApp, or send an enquiry to buy or sell a premium, clean luxury car.">
+    <meta name="author" content="Ojelade Ifeoluwa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/logo-shield.webp" alt="DM4Autos Logo" width="160" height="168">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Get in Touch with DM4Autos Port Harcourt</h1>
+        <p>Your one-stop hub for premium auto sales, professional detailing, and expert vehicle maintenance.</p>
+        <section>
+            <h2>Contact Details</h2>
+            <address>
+                <ul class="contact-list">
+                    <li>Phone: <a href="tel:+2348064540495">08064540495</a></li>
+                    <li><a class="button" href="https://wa.me/2348064540495" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></li>
+                    <li>Location: Port Harcourt, Rivers State, Nigeria</li>
+                </ul>
+            </address>
+        </section>
+        <section>
+            <h2>Send Us a Message</h2>
+            <form id="contact-form" method="get" action="contact.html">
+                <label for="fullname">Full name</label>
+                <input type="text" id="fullname" name="fullname" autocomplete="name" required>
+
+                <label for="phone">Phone or WhatsApp number</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+
+                <label for="topic">What do you need?</label>
+                <select id="topic" name="topic" required>
+                    <option value="" disabled selected>Select one ...</option>
+                    <option value="Buying a car">Buying a car</option>
+                    <option value="Selling a car">Selling a car</option>
+                    <option value="A car history question">A car history question</option>
+                    <option value="Something else">Something else</option>
+                </select>
+
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input class="button" type="submit" value="Send Message">
+            </form>
+            <p id="form-feedback" role="status"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Ifeoluwa Ojelade | Port Harcourt</p>
+        <p><a href="references.html">References</a></p>
+        <p id="lastModified">Last Modified</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM4Autos | Inventory</title>
+    <meta name="description" content="Browse cars for sale at DM4Autos in Port Harcourt. Filter by year, mileage, and accident history to find a clean, reliable vehicle.">
+    <meta name="author" content="Ojelade Ifeoluwa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/logo-shield.webp" alt="DM4Autos Logo" width="160" height="168">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="inventory.html" aria-current="page">Inventory</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Cars Available at DM4Autos</h1>
+        <p>Filter our current listings by year, mileage, or accident history to find a car you can trust.</p>
+        <section>
+            <h2>Available Cars</h2>
+            <div class="filter-buttons" role="group" aria-label="Filter cars">
+                <button type="button" class="button" data-filter="all" aria-pressed="true">All Cars</button>
+                <button type="button" class="button" data-filter="newer" aria-pressed="false">2018 or Newer</button>
+                <button type="button" class="button" data-filter="lowmileage" aria-pressed="false">Under 80,000 km</button>
+                <button type="button" class="button" data-filter="noaccident" aria-pressed="false">No Known Accidents</button>
+            </div>
+            <p id="result-count" role="status"></p>
+            <div id="car-list" class="car-grid"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Ifeoluwa Ojelade | Port Harcourt</p>
+        <p><a href="references.html">References</a></p>
+        <p id="lastModified">Last Modified</p>
+    </footer>
+</body>
+</html>
