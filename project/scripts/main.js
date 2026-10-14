@@ -11,7 +11,7 @@ const cars = [
         mileage: 78500,
         history: "No known accidents",
         info: "Clean interior, cold air conditioning, and a smooth automatic gearbox.",
-        images: ["toyota-camry-2016.jpg"]
+        images: ["toyota-camry-2016.png"]
     },
     {
         make: "Lexus",
